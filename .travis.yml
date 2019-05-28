@@ -6,7 +6,7 @@ before_install:
 
 script:
   - docker run wanwanzainaer/react-test npm run test
-
+#
 after_success:
   - docker build -t wanwanzainaer/multi-client ./client
   - docker build -t wanwanzainaer/multi-nginx ./nginx
